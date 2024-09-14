@@ -10,7 +10,7 @@ on:
     branches:
       - main
       - "feat/**" #double * allows for more following *
-    path-ignore:
+    paths-ignore:
       - '.github/workflows/*' # push to branch main, but changes within this path do not trigger the workflow. At least one change in this path, it will not be trigger.
 jobs:
   deploy:
